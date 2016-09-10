@@ -64,6 +64,11 @@ zmq::epoll_t::handle_t zmq::epoll_t::add_fd (fd_t fd_, i_poll_events *events_)
     pe->events = events_;
 
     int rc = epoll_ctl (epoll_fd, EPOLL_CTL_ADD, fd_, &pe->ev);
+    if (rc == EBADF) {
+      // the fd was closed from out underneath us -- but that's ok; we
+      // just won't add it to the epoll set.
+      return pe;
+    }
     errno_assert (rc != -1);
 
     //  Increase the load metric of the thread.
@@ -76,6 +81,11 @@ void zmq::epoll_t::rm_fd (handle_t handle_)
 {
     poll_entry_t *pe = (poll_entry_t*) handle_;
     int rc = epoll_ctl (epoll_fd, EPOLL_CTL_DEL, pe->fd, &pe->ev);
+    if (rc == EBADF) {
+      // the fd was closed from out underneath us -- but that's ok; we
+      // just won't remove it from the epoll set.
+      return;
+    }
     errno_assert (rc != -1);
     pe->fd = retired_fd;
     retired.push_back (pe);
@@ -89,6 +99,11 @@ void zmq::epoll_t::set_pollin (handle_t handle_)
     poll_entry_t *pe = (poll_entry_t*) handle_;
     pe->ev.events |= EPOLLIN;
     int rc = epoll_ctl (epoll_fd, EPOLL_CTL_MOD, pe->fd, &pe->ev);
+    if (rc == EBADF) {
+      // the fd was closed from out underneath us -- but that's ok; we
+      // just won't set it up for polling.
+      return;
+    }
     errno_assert (rc != -1);
 }
 
@@ -105,6 +120,11 @@ void zmq::epoll_t::set_pollout (handle_t handle_)
     poll_entry_t *pe = (poll_entry_t*) handle_;
     pe->ev.events |= EPOLLOUT;
     int rc = epoll_ctl (epoll_fd, EPOLL_CTL_MOD, pe->fd, &pe->ev);
+    if (rc == EBADF) {
+      // the fd was closed from out underneath us -- but that's ok; we
+      // just won't set it up for polling.
+      return;
+    }
     errno_assert (rc != -1);
 }
 
@@ -113,6 +133,11 @@ void zmq::epoll_t::reset_pollout (handle_t handle_)
     poll_entry_t *pe = (poll_entry_t*) handle_;
     pe->ev.events &= ~((short) EPOLLOUT);
     int rc = epoll_ctl (epoll_fd, EPOLL_CTL_MOD, pe->fd, &pe->ev);
+    if (rc == EBADF) {
+      // the fd was closed from out underneath us -- but that's ok; we
+      // just won't reset it for pollout.
+      return;
+    }
     errno_assert (rc != -1);
 }
 
