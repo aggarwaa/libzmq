@@ -1,0 +1,368 @@
+ULONGLONG	clock.cpp	/^typedef ULONGLONG (*f_compatible_get_tick_count64)/
+accept	tcp_listener.cpp	/^zmq::fd_t zmq::tcp_listener_t::accept ()$/
+activated	dist.cpp	/^void zmq::dist_t::activated (pipe_t *pipe_)$/
+add	mtrie.cpp	/^bool zmq::mtrie_t::add (unsigned char *prefix_, si/
+add_fd	devpoll.cpp	/^zmq::devpoll_t::handle_t zmq::devpoll_t::add_fd (f/
+add_helper	mtrie.cpp	/^bool zmq::mtrie_t::add_helper (unsigned char *pref/
+add_property	mechanism.cpp	/^size_t zmq::mechanism_t::add_property (unsigned ch/
+add_timer	io_object.cpp	/^void zmq::io_object_t::add_timer (int timeout_, in/
+addr	ipc_address.cpp	/^const sockaddr *zmq::ipc_address_t::addr () const$/
+address	address.cpp	/^      address (address_)$/
+address_t	address.cpp	/^zmq::address_t::~address_t ()$/
+addrlen	ipc_address.cpp	/^socklen_t zmq::ipc_address_t::addrlen () const$/
+adjust_load	poller_base.cpp	/^void zmq::poller_base_t::adjust_load (int amount_)/
+alloc_assert	err.hpp	/^#define alloc_assert(x) \\$/
+apply	trie.cpp	/^void zmq::trie_t::apply (void (*func_) (unsigned c/
+apply_helper	trie.cpp	/^void zmq::trie_t::apply_helper ($/
+attach	dist.cpp	/^void zmq::dist_t::attach (pipe_t *pipe_)$/
+bind	socket_base.cpp	/^int zmq::socket_base_t::bind (const char *addr_)$/
+blob_t	xpub.hpp	/^        typedef std::basic_string <unsigned char> /
+bufsize	raw_decoder.cpp	/^    bufsize (bufsize_)$/
+cancel_timer	io_object.cpp	/^void zmq::io_object_t::cancel_timer (int id_)$/
+check_protocol	socket_base.cpp	/^int zmq::socket_base_t::check_protocol (const std:/
+check_read	pipe.cpp	/^bool zmq::pipe_t::check_read ()$/
+check_socket_type	mechanism.cpp	/^bool zmq::mechanism_t::check_socket_type (const st/
+check_tag	ctx.cpp	/^bool zmq::ctx_t::check_tag ()$/
+check_term_acks	own.cpp	/^void zmq::own_t::check_term_acks ()$/
+choose_io_thread	ctx.cpp	/^zmq::io_thread_t *zmq::ctx_t::choose_io_thread (ui/
+chunk_t	yqueue.hpp	/^        struct chunk_t$/
+clipped_maxsocket	ctx.cpp	/^int clipped_maxsocket(int max_requested)$/
+clock_t	clock.cpp	/^zmq::clock_t::~clock_t ()$/
+close	ipc_connecter.cpp	/^int zmq::ipc_connecter_t::close ()$/
+cn_nonce	curve_server.cpp	/^    cn_nonce (1)$/
+command_t	command.hpp	/^    struct command_t$/
+compatible_get_tick_count64	clock.cpp	/^ULONGLONG compatible_get_tick_count64()$/
+compute_lwm	pipe.cpp	/^int zmq::pipe_t::compute_lwm (int hwm_)$/
+compute_sqns	pgm_socket.cpp	/^int zmq::pgm_socket_t::compute_sqns (int tpdu_)$/
+conflate	options.cpp	/^    conflate (false)$/
+connect	ipc_connecter.cpp	/^zmq::fd_t zmq::ipc_connecter_t::connect ()$/
+connect_inproc_sockets	ctx.cpp	/^void zmq::ctx_t::connect_inproc_sockets(zmq::socke/
+connect_pending	ctx.cpp	/^void zmq::ctx_t::connect_pending (const char *addr/
+content_t	msg.hpp	/^        struct content_t$/
+cpipe_t	mailbox.hpp	/^        typedef ypipe_t <command_t, command_pipe_g/
+create	session_base.cpp	/^zmq::session_base_t *zmq::session_base_t::create (/
+ctx_t	ctx.cpp	/^zmq::ctx_t::~ctx_t ()$/
+current_reconnect_ivl	ipc_connecter.cpp	/^    current_reconnect_ivl(options.reconnect_ivl)$/
+curve_client_t	curve_client.cpp	/^zmq::curve_client_t::~curve_client_t ()$/
+curve_server_t	curve_server.cpp	/^zmq::curve_server_t::~curve_server_t ()$/
+dealer_t	dealer.cpp	/^zmq::dealer_t::~dealer_t ()$/
+decode	curve_client.cpp	/^int zmq::curve_client_t::decode (msg_t *msg_)$/
+destroy_socket	ctx.cpp	/^void zmq::ctx_t::destroy_socket (class socket_base/
+devpoll_ctl	devpoll.cpp	/^void zmq::devpoll_t::devpoll_ctl (fd_t fd_, short /
+devpoll_t	devpoll.cpp	/^zmq::devpoll_t::~devpoll_t ()$/
+dist_t	dist.cpp	/^zmq::dist_t::~dist_t ()$/
+drop_subscriptions	pgm_receiver.cpp	/^void zmq::pgm_receiver_t::drop_subscriptions ()$/
+dropping	lb.cpp	/^    dropping (false)$/
+encode	curve_client.cpp	/^int zmq::curve_client_t::encode (msg_t *msg_)$/
+endpoint_pipe_t	socket_base.hpp	/^        typedef std::pair <own_t *, pipe_t*> endpo/
+endpoint_t	ctx.hpp	/^    struct endpoint_t$/
+endpoints_t	socket_base.hpp	/^        typedef std::multimap <std::string, endpoi/
+epoll_t	epoll.cpp	/^zmq::epoll_t::~epoll_t ()$/
+errno_assert	err.hpp	/^#define errno_assert(x) \\$/
+errno_to_string	err.cpp	/^const char *zmq::errno_to_string (int errno_)$/
+execute_timers	poller_base.cpp	/^uint64_t zmq::poller_base_t::execute_timers ()$/
+fd_entry_t	devpoll.hpp	/^        struct fd_entry_t$/
+fd_set_t	select.hpp	/^        typedef std::vector <fd_entry_t> fd_set_t;/
+fd_t	fd.hpp	/^    typedef UINT_PTR fd_t;$/
+fd_table_t	devpoll.hpp	/^        typedef std::vector <fd_entry_t> fd_table_/
+find_endpoint	ctx.cpp	/^zmq::endpoint_t zmq::ctx_t::find_endpoint (const c/
+flags_ready	v2_decoder.cpp	/^int zmq::v2_decoder_t::flags_ready ()$/
+forked	signaler.cpp	/^void zmq::signaler_t::forked()$/
+fq_t	fq.cpp	/^zmq::fq_t::~fq_t ()$/
+gai_assert	err.hpp	/^#define gai_assert(x) \\$/
+generate_random	random.cpp	/^uint32_t zmq::generate_random ()$/
+get_address	ipc_listener.cpp	/^int zmq::ipc_listener_t::get_address (std::string /
+get_buffer	raw_decoder.cpp	/^void zmq::raw_decoder_t::get_buffer (unsigned char/
+get_ctx	object.cpp	/^zmq::ctx_t *zmq::object_t::get_ctx ()$/
+get_fd	mailbox.cpp	/^zmq::fd_t zmq::mailbox_t::get_fd ()$/
+get_identity	pipe.cpp	/^zmq::blob_t zmq::pipe_t::get_identity ()$/
+get_load	io_thread.cpp	/^int zmq::io_thread_t::get_load ()$/
+get_mailbox	io_thread.cpp	/^zmq::mailbox_t *zmq::io_thread_t::get_mailbox ()$/
+get_poller	io_thread.cpp	/^zmq::poller_t *zmq::io_thread_t::get_poller ()$/
+get_reaper	ctx.cpp	/^zmq::object_t *zmq::ctx_t::get_reaper ()$/
+get_tid	object.cpp	/^uint32_t zmq::object_t::get_tid ()$/
+getsockopt	socket_base.cpp	/^int zmq::socket_base_t::getsockopt (int option_, v/
+handle_t	devpoll.hpp	/^        typedef fd_t handle_t;$/
+hint	msg.hpp	/^    typedef void (msg_free_fn) (void *data, void */
+i_encoder	i_encoder.hpp	/^    struct i_encoder$/
+i_engine	i_engine.hpp	/^    struct i_engine$/
+i_pipe_events	pipe.hpp	/^    struct i_pipe_events$/
+i_poll_events	i_poll_events.hpp	/^    struct i_poll_events$/
+identify_peer	stream.cpp	/^void zmq::stream_t::identify_peer (pipe_t *pipe_)$/
+if	mtrie.cpp	/^    if (new_min > min || new_max < min + count - 1/
+in_event	io_object.cpp	/^void zmq::io_object_t::in_event ()$/
+inc_seqnum	own.cpp	/^void zmq::own_t::inc_seqnum ()$/
+init	msg.cpp	/^int zmq::msg_t::init ()$/
+init_address	pgm_socket.cpp	/^int zmq::pgm_socket_t::init_address (const char *n/
+init_compatible_get_tick_count64	clock.cpp	/^f_compatible_get_tick_count64 init_compatible_get_/
+init_data	msg.cpp	/^int zmq::msg_t::init_data (void *data_, size_t siz/
+init_size	msg.cpp	/^int zmq::msg_t::init_size (size_t size_)$/
+inprocs_t	socket_base.hpp	/^        typedef std::multimap <std::string, pipe_t/
+insize	pgm_receiver.cpp	/^    insize (0)$/
+int16_t	stdint.hpp	/^typedef __int16 int16_t;$/
+int32_t	stdint.hpp	/^typedef __int32 int32_t;$/
+int64_t	stdint.hpp	/^typedef __int64 int64_t;$/
+int8_t	stdint.hpp	/^typedef __int8 int8_t;$/
+integer_t	atomic_counter.hpp	/^        typedef uint32_t integer_t;$/
+io_object_t	io_object.cpp	/^zmq::io_object_t::~io_object_t ()$/
+io_thread_t	io_thread.cpp	/^zmq::io_thread_t::~io_thread_t ()$/
+iovec	zmq.cpp	/^struct iovec {$/
+ipc_address_t	ipc_address.cpp	/^zmq::ipc_address_t::ipc_address_t ()$/
+ipc_connecter_t	ipc_connecter.cpp	/^zmq::ipc_connecter_t::~ipc_connecter_t ()$/
+ipc_listener_t	ipc_listener.cpp	/^zmq::ipc_listener_t::~ipc_listener_t ()$/
+ipv6	ctx.cpp	/^    ipv6 (false)$/
+is_delimiter	pipe.cpp	/^bool zmq::pipe_t::is_delimiter (msg_t &msg_)$/
+is_handshake_complete	curve_client.cpp	/^bool zmq::curve_client_t::is_handshake_complete ()/
+is_retired_fd	select.cpp	/^bool zmq::select_t::is_retired_fd (const fd_entry_/
+is_terminating	own.cpp	/^bool zmq::own_t::is_terminating ()$/
+kevent_add	kqueue.cpp	/^void zmq::kqueue_t::kevent_add (fd_t fd_, short fi/
+kevent_delete	kqueue.cpp	/^void zmq::kqueue_t::kevent_delete (fd_t fd_, short/
+kqueue_t	kqueue.cpp	/^zmq::kqueue_t::~kqueue_t ()$/
+launch_child	own.cpp	/^void zmq::own_t::launch_child (own_t *object_)$/
+lb_t	lb.cpp	/^zmq::lb_t::~lb_t ()$/
+likely	likely.hpp	/^#define likely(x) __builtin_expect ((x), 1)$/
+live_nodes	mtrie.cpp	/^    live_nodes (0)$/
+load_msg	encoder.hpp	/^        void load_msg (msg_t *msg_)$/
+loop	devpoll.cpp	/^void zmq::devpoll_t::loop ()$/
+mailbox_t	mailbox.cpp	/^zmq::mailbox_t::mailbox_t ()$/
+make_fdpair	signaler.cpp	/^int zmq::signaler_t::make_fdpair (fd_t *r_, fd_t */
+mark_as_matching	xpub.cpp	/^void zmq::xpub_t::mark_as_matching (pipe_t *pipe_,/
+max_fds	devpoll.cpp	/^int zmq::devpoll_t::max_fds ()$/
+maxmsgsize	v1_decoder.cpp	/^    maxmsgsize (maxmsgsize_)$/
+mechanism_t	mechanism.cpp	/^zmq::mechanism_t::~mechanism_t ()$/
+message	msg.cpp	/^\/\/  and private representation of the message (z/
+message_ready	v1_encoder.cpp	/^void zmq::v1_encoder_t::message_ready ()$/
+monitor_events	socket_base.cpp	/^    monitor_events (0)$/
+more	dist.cpp	/^    more (false)$/
+mtrie_t	mtrie.cpp	/^zmq::mtrie_t::~mtrie_t ()$/
+next_handshake_command	curve_client.cpp	/^int zmq::curve_client_t::next_handshake_command (m/
+next_peer_id	stream.cpp	/^    next_peer_id (generate_random ())$/
+next_step	encoder.hpp	/^        inline void next_step (void *write_pos_, s/
+now_us	clock.cpp	/^uint64_t zmq::clock_t::now_us ()$/
+object_t	io_thread.cpp	/^    object_t (ctx_, tid_)$/
+one_byte_size_ready	v1_decoder.cpp	/^int zmq::v1_decoder_t::one_byte_size_ready ()$/
+open	ipc_connecter.cpp	/^int zmq::ipc_connecter_t::open ()$/
+open_socket	ip.cpp	/^zmq::fd_t zmq::open_socket (int domain_, int type_/
+options	mechanism.cpp	/^    options (options_)$/
+options_t	options.hpp	/^    struct options_t$/
+out_event	io_object.cpp	/^void zmq::io_object_t::out_event ()$/
+outpipe_t	stream.hpp	/^        struct outpipe_t$/
+outpipes_t	stream.hpp	/^        typedef std::map <blob_t, outpipe_t> outpi/
+own_t	own.cpp	/^zmq::own_t::~own_t ()$/
+owned_t	own.hpp	/^        typedef std::set <own_t*> owned_t;$/
+pair_t	pair.cpp	/^zmq::pair_t::~pair_t ()$/
+parse_metadata	mechanism.cpp	/^int zmq::mechanism_t::parse_metadata (const unsign/
+parse_uri	socket_base.cpp	/^int zmq::socket_base_t::parse_uri (const char *uri/
+peer_identity	mechanism.cpp	/^void zmq::mechanism_t::peer_identity (msg_t *msg_)/
+peer_info_t	pgm_receiver.hpp	/^        struct peer_info_t$/
+peers_t	pgm_receiver.hpp	/^        typedef std::map <pgm_tsi_t, peer_info_t, /
+pend_connection	ctx.cpp	/^void zmq::ctx_t::pend_connection (const char *addr/
+pending_connection_t	ctx.hpp	/^    struct pending_connection_t$/
+pending_list_t	devpoll.hpp	/^        typedef std::vector <fd_t> pending_list_t;/
+pgm_msgv_processed	pgm_socket.cpp	/^    pgm_msgv_processed (0)$/
+pgm_receiver_t	pgm_receiver.cpp	/^zmq::pgm_receiver_t::~pgm_receiver_t ()$/
+pgm_sender_t	pgm_sender.cpp	/^zmq::pgm_sender_t::~pgm_sender_t ()$/
+pipe	pair.cpp	/^    pipe (NULL)$/
+pipe_t	pipe.cpp	/^zmq::pipe_t::~pipe_t ()$/
+pipe_terminated	dist.cpp	/^void zmq::dist_t::pipe_terminated (pipe_t *pipe_)$/
+pipepair	pipe.cpp	/^int zmq::pipepair (class object_t *parents_ [2], c/
+pipes_t	dist.hpp	/^        typedef array_t <zmq::pipe_t, 2> pipes_t;$/
+plain_mechanism_t	plain_mechanism.cpp	/^zmq::plain_mechanism_t::~plain_mechanism_t ()$/
+platforms	tcp_address.cpp	/^\/\/  Some platforms (notably Darwin\/OSX and NetB/
+plug	io_object.cpp	/^void zmq::io_object_t::plug (io_thread_t *io_threa/
+poll_entry_t	epoll.hpp	/^        struct poll_entry_t$/
+poll_t	poll.cpp	/^zmq::poll_t::~poll_t ()$/
+poller	io_object.cpp	/^    poller (NULL)$/
+poller_base_t	poller_base.cpp	/^zmq::poller_base_t::poller_base_t ()$/
+poller_t	devpoll.hpp	/^    typedef devpoll_t poller_t;$/
+pollset_t	poll.hpp	/^        typedef std::vector <pollfd> pollset_t;$/
+posix_assert	err.hpp	/^#define posix_assert(x) \\$/
+probe_router	dealer.cpp	/^    probe_router (false)$/
+process_activate_read	object.cpp	/^void zmq::object_t::process_activate_read ()$/
+process_activate_write	object.cpp	/^void zmq::object_t::process_activate_write (uint64/
+process_attach	object.cpp	/^void zmq::object_t::process_attach (i_engine *)$/
+process_bind	object.cpp	/^void zmq::object_t::process_bind (pipe_t *)$/
+process_command	object.cpp	/^void zmq::object_t::process_command (command_t &cm/
+process_destroy	own.cpp	/^void zmq::own_t::process_destroy ()$/
+process_handshake_command	curve_client.cpp	/^int zmq::curve_client_t::process_handshake_command/
+process_hello	curve_server.cpp	/^int zmq::curve_server_t::process_hello (msg_t *msg/
+process_hiccup	object.cpp	/^void zmq::object_t::process_hiccup (void *)$/
+process_initiate	plain_mechanism.cpp	/^int zmq::plain_mechanism_t::process_initiate (msg_/
+process_input	pgm_receiver.cpp	/^int zmq::pgm_receiver_t::process_input (v1_decoder/
+process_own	object.cpp	/^void zmq::object_t::process_own (own_t *)$/
+process_pipe_term	object.cpp	/^void zmq::object_t::process_pipe_term ()$/
+process_pipe_term_ack	object.cpp	/^void zmq::object_t::process_pipe_term_ack ()$/
+process_plug	ipc_connecter.cpp	/^void zmq::ipc_connecter_t::process_plug ()$/
+process_ready	curve_client.cpp	/^int zmq::curve_client_t::process_ready (msg_t *msg/
+process_reap	object.cpp	/^void zmq::object_t::process_reap (class socket_bas/
+process_reaped	object.cpp	/^void zmq::object_t::process_reaped ()$/
+process_seqnum	object.cpp	/^void zmq::object_t::process_seqnum ()$/
+process_stop	io_thread.cpp	/^void zmq::io_thread_t::process_stop ()$/
+process_term	ipc_connecter.cpp	/^void zmq::ipc_connecter_t::process_term (int linge/
+process_term_ack	object.cpp	/^void zmq::object_t::process_term_ack ()$/
+process_term_req	object.cpp	/^void zmq::object_t::process_term_req (own_t *)$/
+process_upstream	pgm_socket.cpp	/^void zmq::pgm_socket_t::process_upstream ()$/
+process_welcome	curve_client.cpp	/^int zmq::curve_client_t::process_welcome (msg_t *m/
+produce_hello	curve_client.cpp	/^int zmq::curve_client_t::produce_hello (msg_t *msg/
+produce_initiate	curve_client.cpp	/^int zmq::curve_client_t::produce_initiate (msg_t */
+produce_ready	curve_server.cpp	/^int zmq::curve_server_t::produce_ready (msg_t *msg/
+produce_welcome	plain_mechanism.cpp	/^int zmq::plain_mechanism_t::produce_welcome (msg_t/
+property	mechanism.cpp	/^int zmq::mechanism_t::property (const std::string /
+proxy	proxy.cpp	/^int zmq::proxy ($/
+pub_t	pub.cpp	/^zmq::pub_t::~pub_t ()$/
+pull_t	pull.cpp	/^zmq::pull_t::~pull_t ()$/
+push_t	push.cpp	/^zmq::push_t::~push_t ()$/
+raw_decoder_t	raw_decoder.cpp	/^zmq::raw_decoder_t::~raw_decoder_t ()$/
+raw_encoder_t	raw_encoder.cpp	/^zmq::raw_encoder_t::~raw_encoder_t ()$/
+raw_message_ready	raw_encoder.cpp	/^void zmq::raw_encoder_t::raw_message_ready ()$/
+rdtsc	clock.cpp	/^uint64_t zmq::clock_t::rdtsc ()$/
+read	stream_engine.cpp	/^int zmq::stream_engine_t::read (void *data_, size_/
+reaper_t	reaper.cpp	/^zmq::reaper_t::~reaper_t ()$/
+receive_and_process_zap_reply	curve_server.cpp	/^int zmq::curve_server_t::receive_and_process_zap_r/
+recv	fq.cpp	/^int zmq::fq_t::recv (msg_t *msg_)$/
+recvpipe	dealer.cpp	/^int zmq::dealer_t::recvpipe (msg_t *msg_, pipe_t */
+register_endpoint	ctx.cpp	/^int zmq::ctx_t::register_endpoint (const char *add/
+register_term_acks	own.cpp	/^void zmq::own_t::register_term_acks (int count_)$/
+rep_t	rep.cpp	/^zmq::rep_t::~rep_t ()$/
+req_t	req.cpp	/^zmq::req_t::~req_t ()$/
+request_begins	rep.cpp	/^    request_begins (true)$/
+reset_pollin	devpoll.cpp	/^void zmq::devpoll_t::reset_pollin (handle_t handle/
+reset_pollout	devpoll.cpp	/^void zmq::devpoll_t::reset_pollout (handle_t handl/
+resolve	ipc_address.cpp	/^int zmq::ipc_address_t::resolve (const char *path_/
+resolve_hostname	tcp_address.cpp	/^int zmq::tcp_address_t::resolve_hostname (const ch/
+resolve_interface	tcp_address.cpp	/^int zmq::tcp_address_t::resolve_interface (const c/
+resolve_nic_name	tcp_address.cpp	/^int zmq::tcp_address_t::resolve_nic_name (const ch/
+restart_input	pgm_receiver.cpp	/^void zmq::pgm_receiver_t::restart_input ()$/
+restart_output	pgm_receiver.cpp	/^void zmq::pgm_receiver_t::restart_output ()$/
+retired_t	epoll.hpp	/^        typedef std::vector <poll_entry_t*> retire/
+rm	mtrie.cpp	/^void zmq::mtrie_t::rm (pipe_t *pipe_,$/
+rm_fd	devpoll.cpp	/^void zmq::devpoll_t::rm_fd (handle_t handle_)$/
+rm_helper	mtrie.cpp	/^void zmq::mtrie_t::rm_helper (pipe_t *pipe_, unsig/
+router_t	router.cpp	/^zmq::router_t::~router_t ()$/
+scoped_lock_t	mutex.hpp	/^    struct scoped_lock_t$/
+seed_random	random.cpp	/^void zmq::seed_random ()$/
+select_t	select.cpp	/^zmq::select_t::~select_t ()$/
+send	lb.cpp	/^int zmq::lb_t::send (msg_t *msg_)$/
+send_activate_read	object.cpp	/^void zmq::object_t::send_activate_read (pipe_t *de/
+send_activate_write	object.cpp	/^void zmq::object_t::send_activate_write (pipe_t *d/
+send_attach	object.cpp	/^void zmq::object_t::send_attach (session_base_t *d/
+send_bind	object.cpp	/^void zmq::object_t::send_bind (own_t *destination_/
+send_command	ctx.cpp	/^void zmq::ctx_t::send_command (uint32_t tid_, cons/
+send_done	object.cpp	/^void zmq::object_t::send_done ()$/
+send_hiccup	object.cpp	/^void zmq::object_t::send_hiccup (pipe_t *destinati/
+send_inproc_connected	object.cpp	/^void zmq::object_t::send_inproc_connected (zmq::so/
+send_own	object.cpp	/^void zmq::object_t::send_own (own_t *destination_,/
+send_pipe_term	object.cpp	/^void zmq::object_t::send_pipe_term (pipe_t *destin/
+send_pipe_term_ack	object.cpp	/^void zmq::object_t::send_pipe_term_ack (pipe_t *de/
+send_plug	object.cpp	/^void zmq::object_t::send_plug (own_t *destination_/
+send_reap	object.cpp	/^void zmq::object_t::send_reap (class socket_base_t/
+send_reaped	object.cpp	/^void zmq::object_t::send_reaped ()$/
+send_stop	object.cpp	/^void zmq::object_t::send_stop ()$/
+send_term	object.cpp	/^void zmq::object_t::send_term (own_t *destination_/
+send_term_ack	object.cpp	/^void zmq::object_t::send_term_ack (own_t *destinat/
+send_term_req	object.cpp	/^void zmq::object_t::send_term_req (own_t *destinat/
+send_unsubscription	xpub.cpp	/^void zmq::xpub_t::send_unsubscription (unsigned ch/
+send_zap_request	curve_server.cpp	/^void zmq::curve_server_t::send_zap_request (const /
+sendpipe	dealer.cpp	/^int zmq::dealer_t::sendpipe (msg_t *msg_, pipe_t */
+session_base_t	session_base.cpp	/^zmq::session_base_t::~session_base_t ()$/
+set_address	ipc_listener.cpp	/^int zmq::ipc_listener_t::set_address (const char */
+set_event_sink	pipe.cpp	/^void zmq::pipe_t::set_event_sink (i_pipe_events *s/
+set_hwms	pipe.cpp	/^void zmq::pipe_t::set_hwms (int inhwm_, int outhwm/
+set_identity	pipe.cpp	/^void zmq::pipe_t::set_identity (const blob_t &iden/
+set_nodelay	pipe.cpp	/^void zmq::pipe_t::set_nodelay ()$/
+set_owner	own.cpp	/^void zmq::own_t::set_owner (own_t *owner_)$/
+set_peer	pipe.cpp	/^void zmq::pipe_t::set_peer (pipe_t *peer_)$/
+set_peer_identity	mechanism.cpp	/^void zmq::mechanism_t::set_peer_identity (const vo/
+set_pollin	devpoll.cpp	/^void zmq::devpoll_t::set_pollin (handle_t handle_)/
+set_pollout	devpoll.cpp	/^void zmq::devpoll_t::set_pollout (handle_t handle_/
+set_tcp_receive_buffer	tcp.cpp	/^void zmq::set_tcp_receive_buffer (fd_t sockfd_, in/
+set_tcp_send_buffer	tcp.cpp	/^void zmq::set_tcp_send_buffer (fd_t sockfd_, int b/
+set_tid	object.cpp	/^void zmq::object_t::set_tid(uint32_t id)$/
+setsockopt	options.cpp	/^int zmq::options_t::setsockopt (int option_, const/
+signaler_t	signaler.cpp	/^zmq::signaler_t::signaler_t ()$/
+size_ready	v1_encoder.cpp	/^void zmq::v1_encoder_t::size_ready ()$/
+sizeof	zmq.cpp	/^    [sizeof (zmq::msg_t) ==  sizeof (zmq_msg_t) ? /
+socket	ipc_listener.cpp	/^    socket (socket_)$/
+socket_base_t	pull.cpp	/^    socket_base_t (parent_, tid_, sid_)$/
+socket_type_string	mechanism.cpp	/^const char *zmq::mechanism_t::socket_type_string (/
+start	devpoll.cpp	/^void zmq::devpoll_t::start ()$/
+state	curve_client.cpp	/^    state (send_hello)$/
+state_t	curve_client.hpp	/^        enum state_t {$/
+stop	devpoll.cpp	/^void zmq::devpoll_t::stop ()$/
+stopping	devpoll.cpp	/^    stopping (false)$/
+stream_engine_t	stream_engine.cpp	/^zmq::stream_engine_t::~stream_engine_t ()$/
+stream_t	stream.cpp	/^zmq::stream_t::~stream_t ()$/
+strict	req.cpp	/^    strict (true)$/
+sub_t	sub.cpp	/^zmq::sub_t::~sub_t ()$/
+tcp_accept_filters_t	options.hpp	/^        typedef std::vector <tcp_address_mask_t> t/
+tcp_connecter_t	tcp_connecter.cpp	/^zmq::tcp_connecter_t::~tcp_connecter_t ()$/
+tcp_listener_t	tcp_listener.cpp	/^zmq::tcp_listener_t::~tcp_listener_t ()$/
+term_acks	own.cpp	/^    term_acks (0)$/
+term_child	own.cpp	/^void zmq::own_t::term_child (own_t *object_)$/
+terminate	pgm_receiver.cpp	/^void zmq::pgm_receiver_t::terminate ()$/
+terminating	reaper.cpp	/^    terminating (false)$/
+tid	object.cpp	/^    tid (tid_)$/
+timer_event	io_object.cpp	/^void zmq::io_object_t::timer_event (int)$/
+timer_info_t	poller_base.hpp	/^        struct timer_info_t$/
+timers_t	poller_base.hpp	/^        typedef std::multimap <uint64_t, timer_inf/
+to_string	address.cpp	/^int zmq::address_t::to_string (std::string &addr_)/
+trie_t	trie.cpp	/^zmq::trie_t::~trie_t ()$/
+tsi_comp	pgm_receiver.hpp	/^        struct tsi_comp$/
+tune_tcp_keepalives	tcp.cpp	/^void zmq::tune_tcp_keepalives (fd_t s_, int keepal/
+tune_tcp_socket	tcp.cpp	/^void zmq::tune_tcp_socket (fd_t s_)$/
+type_t	command.hpp	/^        enum type_t$/
+uint16_t	stdint.hpp	/^typedef unsigned __int16 uint16_t;$/
+uint32_t	stdint.hpp	/^typedef unsigned __int32 uint32_t;$/
+uint64_t	stdint.hpp	/^typedef unsigned __int64 uint64_t;$/
+uint8_t	stdint.hpp	/^typedef unsigned __int8 uint8_t;$/
+unlikely	likely.hpp	/^#define unlikely(x) __builtin_expect ((x), 0)$/
+unmatch	dist.cpp	/^void zmq::dist_t::unmatch ()$/
+unplug	io_object.cpp	/^void zmq::io_object_t::unplug ()$/
+unregister_endpoints	ctx.cpp	/^void zmq::ctx_t::unregister_endpoints (socket_base/
+unregister_term_ack	own.cpp	/^void zmq::own_t::unregister_term_ack ()$/
+upipe_conflate_t	pipe.cpp	/^    typedef ypipe_conflate_t <msg_t, message_pipe_/
+upipe_normal_t	pipe.cpp	/^    typedef ypipe_t      <msg_t, message_pipe_gran/
+upipe_t	pipe.hpp	/^        typedef ypipe_base_t <msg_t, message_pipe_/
+v1_decoder_t	v1_decoder.cpp	/^zmq::v1_decoder_t::~v1_decoder_t ()$/
+v1_encoder_t	v1_encoder.cpp	/^zmq::v1_encoder_t::~v1_encoder_t ()$/
+v2_decoder_t	v2_decoder.cpp	/^zmq::v2_decoder_t::~v2_decoder_t ()$/
+v2_encoder_t	v2_encoder.cpp	/^zmq::v2_encoder_t::~v2_encoder_t ()$/
+void	encoder.hpp	/^        typedef void (T::*step_t) ();$/
+wait	signaler.cpp	/^int zmq::signaler_t::wait (int timeout_)$/
+win_assert	err.hpp	/^#define win_assert(x) \\$/
+worker_routine	devpoll.cpp	/^void zmq::devpoll_t::worker_routine (void *arg_)$/
+write_activated	session_base.cpp	/^void zmq::session_base_t::write_activated (pipe_t /
+write_size	pgm_sender.cpp	/^    write_size (0)$/
+wsa_assert	err.hpp	/^#define wsa_assert(x) \\$/
+wsa_assert_no	err.hpp	/^#define wsa_assert_no(no) \\$/
+wsa_error	err.cpp	/^const char *zmq::wsa_error()$/
+wsa_error_no	err.cpp	/^const char *zmq::wsa_error_no (int no_)$/
+xattach_pipe	dealer.cpp	/^void zmq::dealer_t::xattach_pipe (pipe_t *pipe_, b/
+xhas_in	dealer.cpp	/^bool zmq::dealer_t::xhas_in ()$/
+xhas_out	dealer.cpp	/^bool zmq::dealer_t::xhas_out ()$/
+xpipe_terminated	dealer.cpp	/^void zmq::dealer_t::xpipe_terminated (pipe_t *pipe/
+xpub_t	pub.cpp	/^    xpub_t (parent_, tid_, sid_)$/
+xread_activated	dealer.cpp	/^void zmq::dealer_t::xread_activated (pipe_t *pipe_/
+xrecv	dealer.cpp	/^int zmq::dealer_t::xrecv (msg_t *msg_)$/
+xsend	dealer.cpp	/^int zmq::dealer_t::xsend (msg_t *msg_)$/
+xsetsockopt	dealer.cpp	/^int zmq::dealer_t::xsetsockopt (int option_, const/
+xsub_t	sub.cpp	/^    xsub_t (parent_, tid_, sid_)$/
+xwrite_activated	dealer.cpp	/^void zmq::dealer_t::xwrite_activated (pipe_t *pipe/
+zap_msg_available	curve_server.cpp	/^int zmq::curve_server_t::zap_msg_available ()$/
+zap_reply_received	null_mechanism.cpp	/^    zap_reply_received (false)$/
+zmq_abort	err.cpp	/^void zmq::zmq_abort(const char *errmsg_)$/
+zmq_assert	err.hpp	/^#define zmq_assert(x) \\$/
+zmq_ctx_new	zmq.cpp	/^void *zmq_ctx_new (void)$/
+zmq_curve_keypair	zmq_utils.cpp	/^int zmq_curve_keypair (char *z85_public_key, char /
+zmq_device	zmq.cpp	/^int zmq_device (int \/* type *\/, void *frontend_,/
+zmq_errno	zmq.cpp	/^int zmq_errno (void)$/
+zmq_proxy	zmq.cpp	/^int zmq_proxy (void *frontend_, void *backend_, vo/
+zmq_sleep	zmq_utils.cpp	/^void zmq_sleep (int seconds_)$/
+zmq_stopwatch_start	zmq_utils.cpp	/^void *zmq_stopwatch_start ()$/
+zmq_stopwatch_stop	zmq_utils.cpp	/^unsigned long zmq_stopwatch_stop (void *watch_)$/
+zmq_strerror	zmq.cpp	/^const char *zmq_strerror (int errnum_)$/
+zmq_threadclose	zmq_utils.cpp	/^void zmq_threadclose(void* thread)$/
+zmq_threadstart	zmq_utils.cpp	/^void *zmq_threadstart(zmq_thread_fn* func, void* a/
+zmq_version	zmq.cpp	/^void zmq_version (int *major_, int *minor_, int *p/
+zmq_z85_decode	zmq_utils.cpp	/^uint8_t *zmq_z85_decode (uint8_t *dest, char *stri/
+zmq_z85_encode	zmq_utils.cpp	/^char *zmq_z85_encode (char *dest, uint8_t *data, s/
